@@ -43,7 +43,7 @@ def get_news():
 
         cursor = conn.cursor()
 
-        cursor.execute("SELECT id, title, description, image, FROM news")
+        cursor.execute("SELECT id, title, description, image FROM news")
 
         news = cursor.fetchall() 
 
