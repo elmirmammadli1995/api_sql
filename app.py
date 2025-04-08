@@ -64,9 +64,7 @@ def get_news():
         })
 
     except Exception as e:
-        return jsonify({
-            "Error" : str(e), 500
-        })
+        return jsonify({"Error" : str(e)}), 500
 
 
 if __name__ == "__main__" :
