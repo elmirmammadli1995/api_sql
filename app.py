@@ -37,7 +37,9 @@ def get_news():
         conn =  get_db_connection()
 
         if conn is None:
-            return jsonify({"Error" : "Database connection failed"}), 500 
+
+            return jsonify({"error" : "Database connection failed"}), 500 
+
 
         cursor = conn.cursor()
 
