@@ -20,7 +20,7 @@ def get_db_connection():
             database = os.getenv('PGDATABASE'),
             password = os.getenv('PGPASSWORD'),
             port = os.getenv('PGPORT'),
-            sslmode = 'require'
+            sslmode = require
         )
             
         return conn
