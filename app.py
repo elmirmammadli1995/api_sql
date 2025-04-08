@@ -8,7 +8,10 @@ load_dotenv()
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources = {r"/api/news": {
+    "origins" : ["https://elmirmammadli1995.github.io"],
+    "methods" : ["GET"]
+}})
 
 
 def get_db_connection():
